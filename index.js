@@ -57,7 +57,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var newCart = [];
-  
+
   for (var i = 0; i < cart.length; i++) {
     var shoppingItem = cart[i];
     var key = Object.keys(shoppingItem);
