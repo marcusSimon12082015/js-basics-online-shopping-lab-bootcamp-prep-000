@@ -57,16 +57,19 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var newCart = [];
-
   for (var i = 0; i < cart.length; i++) {
     var shoppingItem = cart[i];
     var key = Object.keys(shoppingItem);
-    if (key[0] === item) {
-      delete cart[i]
-      //return cart;
+    if (key[0] != item) {
+      newCart.unshift(shoppingItem);
     }
   }
-  console.log("That item is not in your cart.");
+  if (newCart.length === cart.length) {
+    console.log("That item is not in your cart.");  
+  }else{
+    return newCart;
+  }
+  
 }
 
 function placeOrder(cardNumber) {
