@@ -61,17 +61,15 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     var shoppingItem = cart[i];
     var key = Object.keys(shoppingItem);
-    if (key[0] != item) {
-      newCart[index] = shoppingItem;
+    if (key[0] === item) {
+      cart.splice(i,1);
       index++;
     }
   }
-  if (newCart.length === cart.length) {
+  if ((index + 1) === cart.length) {
     console.log("That item is not in your cart.");
-    return cart;
-  }else{
-    return newCart;
   }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
