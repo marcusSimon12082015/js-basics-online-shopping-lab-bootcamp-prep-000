@@ -215,4 +215,3 @@ describe("placeOrder()", function() {
     expect(getCart()).toEqual([]);
   });
 });
-
