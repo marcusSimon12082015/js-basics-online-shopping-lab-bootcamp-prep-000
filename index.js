@@ -65,11 +65,11 @@ function removeFromCart(item) {
     }
   }
   if (newCart.length === cart.length) {
-    console.log("That item is not in your cart.");  
+    console.log("That item is not in your cart.");
   }else{
     return newCart;
   }
-  
+
 }
 
 function placeOrder(cardNumber) {
