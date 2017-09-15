@@ -66,6 +66,12 @@ function removeFromCart(item) {
       index++;
     }
   }
+  if ((index + 1) === cart.length) {
+    console.log("That item is not in your cart.");
+    return cart;
+  }else{
+    return newCart;
+  }
 }
 
 function placeOrder(cardNumber) {
