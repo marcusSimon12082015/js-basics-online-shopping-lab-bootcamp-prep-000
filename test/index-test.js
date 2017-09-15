@@ -184,7 +184,7 @@ describe("removeFromCart()", function() {
     expect(console.log).toHaveBeenCalledWith("That item is not in your cart.");
   });
 });
-/*
+
 describe("placeOrder()", function() {
   it("doesn't place the order if a credit card number is not provided", function() {
     placeOrder();
@@ -215,4 +215,4 @@ describe("placeOrder()", function() {
     expect(getCart()).toEqual([]);
   });
 });
-*/
+
